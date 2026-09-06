@@ -1,4 +1,4 @@
-# VigilEye 👁️🚗
+# VigilEye
 
 **Real-Time Driver Drowsiness Detection using Computer Vision**
 
@@ -10,30 +10,30 @@ The system continuously monitors facial behavior and triggers an alert when drow
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
-- [Motivation](#-motivation)
-- [Features](#-features)
-- [System Overview](#-system-overview)
-- [How It Works](#-how-it-works)
-  - [Eye Aspect Ratio (EAR)](#-eye-aspect-ratio-ear)
-  - [Mouth Aspect Ratio (MAR)](#-mouth-aspect-ratio-mar)
-  - [Local Binary Patterns (LBP)](#-local-binary-patterns-lbp)
-  - [Temporal Behavior Analysis](#️-temporal-behavior-analysis)
-  - [Why Multiple Visual Signals?](#-why-multiple-visual-signals)
-- [Technology Stack](#️-technology-stack)
-- [Architecture](#-architecture)
-- [Getting Started](#-getting-started)
-- [Project Structure](#-project-structure)
-- [Evaluation Metrics](#-evaluation-metrics)
-- [Future Improvements](#-future-improvements)
-- [Key Takeaways](#-key-takeaways)
-- [Limitations](#️-limitations)
-- [License](#-license)
+- [Motivation](#motivation)
+- [Features](#features)
+- [System Overview](#system-overview)
+- [How It Works](#how-it-works)
+  - [Eye Aspect Ratio (EAR)](#eye-aspect-ratio-ear)
+  - [Mouth Aspect Ratio (MAR)](#mouth-aspect-ratio-mar)
+  - [Local Binary Patterns (LBP)](#local-binary-patterns-lbp)
+  - [Temporal Behavior Analysis](#temporal-behavior-analysis)
+  - [Why Multiple Visual Signals?](#why-multiple-visual-signals)
+- [Technology Stack](#technology-stack)
+- [Architecture](#architecture)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Evaluation Metrics](#evaluation-metrics)
+- [Future Improvements](#future-improvements)
+- [Key Takeaways](#key-takeaways)
+- [Limitations](#limitations)
+- [License](#license)
 
 ---
 
-## 🎯 Motivation
+## Motivation
 
 Driver drowsiness is an important road-safety problem. A moment of prolonged eye closure or a series of yawns can be an early indication of fatigue.
 
@@ -45,21 +45,21 @@ Rather than building a large neural network, VigilEye combines multiple interpre
 
 ---
 
-## ✨ Features
+## Features
 
-- 🎥 Real-time webcam monitoring
-- 👁️ Eye closure detection using **Eye Aspect Ratio (EAR)**
-- 🥱 Yawning detection using **Mouth Aspect Ratio (MAR)**
-- 🧑‍💻 Facial landmark tracking using **MediaPipe Face Mesh**
-- 🧬 Facial texture analysis using **Local Binary Patterns (LBP)**
-- ⏱️ Temporal analysis across consecutive frames
-- 🚨 Real-time drowsiness alerts
-- ⚡ Lightweight and CPU-friendly design
-- 🔍 Interpretable visual features instead of a black-box prediction alone
+- Real-time webcam monitoring
+- Eye closure detection using **Eye Aspect Ratio (EAR)**
+- Yawning detection using **Mouth Aspect Ratio (MAR)**
+- Facial landmark tracking using **MediaPipe Face Mesh**
+- Facial texture analysis using **Local Binary Patterns (LBP)**
+- Temporal analysis across consecutive frames
+- Real-time drowsiness alerts
+- Lightweight and CPU-friendly design
+- Interpretable visual features instead of a black-box prediction alone
 
 ---
 
-## 🧠 System Overview
+## System Overview
 
 ```
                          Webcam
@@ -97,9 +97,9 @@ Rather than building a large neural network, VigilEye combines multiple interpre
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
-### 👁️ Eye Aspect Ratio (EAR)
+### Eye Aspect Ratio (EAR)
 
 Eye closure is one of the primary visual indicators used by VigilEye.
 
@@ -122,7 +122,7 @@ Where the points represent landmarks around the eye.
 
 ---
 
-### 🥱 Mouth Aspect Ratio (MAR)
+### Mouth Aspect Ratio (MAR)
 
 Yawning is another behavioral indicator of fatigue.
 
@@ -140,7 +140,7 @@ When the mouth opens significantly for a sustained period, the system can identi
 
 ---
 
-### 🧬 Local Binary Patterns (LBP)
+### Local Binary Patterns (LBP)
 
 VigilEye also incorporates Local Binary Patterns (LBP) for facial texture analysis.
 
@@ -165,7 +165,7 @@ The purpose of incorporating LBP is to provide an additional visual signal along
 
 ---
 
-### ⏱️ Temporal Behavior Analysis
+### Temporal Behavior Analysis
 
 One of the key design decisions in VigilEye is treating drowsiness as a temporal behavioral pattern rather than a single-frame classification problem.
 
@@ -191,7 +191,7 @@ Similarly, yawning is evaluated across consecutive frames rather than triggering
 
 ---
 
-### 🚨 Why Multiple Visual Signals?
+### Why Multiple Visual Signals?
 
 A single feature can produce false positives. For example:
 
@@ -217,7 +217,7 @@ to obtain a richer representation of potential drowsiness.
 
 ---
 
-## 🔄 Detection Pipeline
+## Detection Pipeline
 
 ```
 ┌───────────────────────┐
@@ -256,12 +256,12 @@ to obtain a richer representation of potential drowsiness.
     Normal     Drowsy
                  │
                  ▼
-              🚨 Alert
+              Alert
 ```
 
 ---
 
-## ⚡ Lightweight Computer Vision Approach
+## Lightweight Computer Vision Approach
 
 Rather than immediately using a computationally expensive deep-learning model, VigilEye focuses on lightweight computer-vision techniques.
 
@@ -288,7 +288,7 @@ The project demonstrates how carefully designed computer-vision features can for
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Technology | Purpose |
 |---|---|
@@ -302,7 +302,7 @@ The project demonstrates how carefully designed computer-vision features can for
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ### Component Diagram
 
@@ -350,7 +350,7 @@ The project demonstrates how carefully designed computer-vision features can for
 
 ---
 
-## 📊 Detection Logic
+## Detection Logic
 
 The conceptual decision process is:
 
@@ -399,7 +399,7 @@ The conceptual decision process is:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -454,7 +454,7 @@ The application should initialize the webcam and begin real-time facial analysis
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 vigil-eye/
@@ -489,7 +489,7 @@ vigil-eye/
 
 ---
 
-## 📈 Evaluation
+## Evaluation
 
 A robust evaluation of VigilEye should consider both detection performance and real-time performance.
 
@@ -532,7 +532,7 @@ Testing should ideally include variations in:
 
 ---
 
-## 🔬 Future Improvements
+## Future Improvements
 
 ### 1. Head Pose Estimation
 
@@ -621,7 +621,7 @@ This could make the system more robust than relying on facial information alone.
 
 ---
 
-## 💡 Key Takeaways
+## Key Takeaways
 
 VigilEye reinforced an important principle:
 
@@ -643,7 +643,7 @@ The project demonstrates how classical computer vision and lightweight AI techni
 
 ---
 
-## 🔭 Research Direction
+## Research Direction
 
 The project opens up an interesting research question:
 
@@ -653,7 +653,7 @@ VigilEye can therefore serve as a lightweight baseline for future experiments in
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 
 **VigilEye is a computer-vision prototype and should NOT be treated as a certified automotive safety system.**
 
@@ -672,7 +672,7 @@ Real-world automotive deployment would require extensive validation, safety test
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Vaibhav Prasad**
 
@@ -681,7 +681,7 @@ AI / ML / Computer Vision
 
 ---
 
-## 📜 License
+## License
 
 This project is available under the license specified in the repository.
 
