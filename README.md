@@ -4,7 +4,7 @@
 
 > **One yawn could be the warning you need.**
 
-NapSense is a real-time computer vision system designed to detect signs of driver drowsiness using a standard webcam. Instead of relying on computationally expensive deep-learning models, VigilEye combines **facial landmarks, eye/mouth geometry, facial texture analysis, and temporal behavior** to identify potential fatigue-related behavior in real time.
+NapSense is a real-time computer vision system designed to detect signs of driver drowsiness using a standard webcam. Instead of relying on computationally expensive deep-learning models, NapSense combines **facial landmarks, eye/mouth geometry, facial texture analysis, and temporal behavior** to identify potential fatigue-related behavior in real time.
 
 The system continuously monitors facial behavior and triggers an alert when drowsiness-related patterns persist across multiple frames.
 
@@ -41,7 +41,7 @@ This project explores a practical question:
 
 > **Can lightweight computer vision techniques provide real-time drowsiness detection using nothing more than a webcam?**
 
-Rather than building a large neural network, VigilEye combines multiple interpretable computer-vision signals to create a lightweight and deployable solution.
+Rather than building a large neural network, NapSense combines multiple interpretable computer-vision signals to create a lightweight and deployable solution.
 
 ---
 
@@ -101,7 +101,7 @@ Rather than building a large neural network, VigilEye combines multiple interpre
 
 ### Eye Aspect Ratio (EAR)
 
-Eye closure is one of the primary visual indicators used by VigilEye.
+Eye closure is one of the primary visual indicators used by NapSense.
 
 Facial landmarks around each eye are used to calculate the Eye Aspect Ratio (EAR).
 
@@ -126,7 +126,7 @@ Where the points represent landmarks around the eye.
 
 Yawning is another behavioral indicator of fatigue.
 
-VigilEye uses facial landmarks around the mouth to calculate the Mouth Aspect Ratio (MAR).
+NapSense uses facial landmarks around the mouth to calculate the Mouth Aspect Ratio (MAR).
 
 **Formula:**
 
@@ -142,7 +142,7 @@ When the mouth opens significantly for a sustained period, the system can identi
 
 ### Local Binary Patterns (LBP)
 
-VigilEye also incorporates Local Binary Patterns (LBP) for facial texture analysis.
+NapSense also incorporates Local Binary Patterns (LBP) for facial texture analysis.
 
 LBP describes local image texture by comparing neighboring pixels with a central pixel. This creates a compact representation of local texture patterns.
 
@@ -167,7 +167,7 @@ The purpose of incorporating LBP is to provide an additional visual signal along
 
 ### Temporal Behavior Analysis
 
-One of the key design decisions in VigilEye is treating drowsiness as a temporal behavioral pattern rather than a single-frame classification problem.
+One of the key design decisions in NapSense is treating drowsiness as a temporal behavioral pattern rather than a single-frame classification problem.
 
 **Example Timeline:**
 
@@ -201,7 +201,7 @@ A single feature can produce false positives. For example:
 - Lighting can affect facial appearance
 - Head movement can temporarily alter landmark measurements
 
-VigilEye therefore combines:
+NapSense therefore combines:
 
 ```
     EAR
@@ -263,7 +263,7 @@ to obtain a richer representation of potential drowsiness.
 
 ## Lightweight Computer Vision Approach
 
-Rather than immediately using a computationally expensive deep-learning model, VigilEye focuses on lightweight computer-vision techniques.
+Rather than immediately using a computationally expensive deep-learning model, NapSense focuses on lightweight computer-vision techniques.
 
 The pipeline uses:
 
@@ -491,7 +491,7 @@ vigil-eye/
 
 ## Evaluation
 
-A robust evaluation of VigilEye should consider both detection performance and real-time performance.
+A robust evaluation of NapSense should consider both detection performance and real-time performance.
 
 ### Performance Metrics
 
@@ -559,7 +559,7 @@ A calibration phase could establish personalized EAR and MAR baselines.
 
 ### 3. Deep Learning Comparison
 
-Use VigilEye's lightweight approach as a baseline and compare it against:
+Use NapSense's lightweight approach as a baseline and compare it against:
 
 ```
 MobileNet
@@ -623,7 +623,7 @@ This could make the system more robust than relying on facial information alone.
 
 ## Key Takeaways
 
-VigilEye reinforced an important principle:
+NapSense reinforced an important principle:
 
 > **AI doesn't always need to be complex to be impactful.**
 
@@ -649,13 +649,13 @@ The project opens up an interesting research question:
 
 > **How effectively can lightweight facial and behavioral features detect drowsiness in real time compared with computationally heavier deep-learning approaches?**
 
-VigilEye can therefore serve as a lightweight baseline for future experiments involving temporal deep learning and multimodal AI.
+NapSense can therefore serve as a lightweight baseline for future experiments involving temporal deep learning and multimodal AI.
 
 ---
 
 ## Limitations
 
-**VigilEye is a computer-vision prototype and should NOT be treated as a certified automotive safety system.**
+**NapSense is a computer-vision prototype and should NOT be treated as a certified automotive safety system.**
 
 Performance may be affected by:
 
