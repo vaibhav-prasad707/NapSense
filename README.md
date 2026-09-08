@@ -8,8 +8,9 @@ NapSense is a real-time computer vision system designed to detect signs of drive
 
 The system continuously monitors facial behavior and triggers an alert when drowsiness-related patterns persist across multiple frames.
 
-<img width="688" height="777" alt="Screenshot 2026-09-09 at 01 31 05" src="https://github.com/user-attachments/assets/da50629e-e9c4-4e1a-baa6-5d467abd259c" />
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/da50629e-e9c4-4e1a-baa6-5d467abd259c" width="688" height="777" alt="Screenshot 2026-09-09 at 01 31 05">
+</p>
 
 ---
 
