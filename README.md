@@ -2,7 +2,7 @@
 
 **Real-Time Driver Drowsiness Detection using Computer Vision**
 
-> **One yawn could be the warning you need.**
+> **One yawn could be the warning you need.** 
 
 NapSense is a real-time computer vision system designed to detect signs of driver drowsiness using a standard webcam. Instead of relying on computationally expensive deep-learning models, NapSense combines **facial landmarks, eye/mouth geometry, facial texture analysis, and temporal behavior** to identify potential fatigue-related behavior in real time.
 
